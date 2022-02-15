@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        li {
+            width: 40%;
+            height: 100px;
+        }
+        li:first-child {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            background-color: bisque;
+        }
+        li:last-child {
+            position: absolute;
+            top: 300px;
+            right: 100px;
+            background-color: chocolate;
+        }
+        li:nth-child(2) {
+            color: #fff;
+            background-color: crimson;
+        }
+        li:nth-child(3) {
+            position: relative;
+            left: 30px;
+            top: 50px;
+            color: #fff;
+            background-color: darkcyan;
+        }
+        hr {
+            width: 30px;
+        }
+        .relative {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px solid #73ad21;
+        }
+        .absolute {
+            position: absolute;
+            top: 80px;
+            right: 0;
+            width: 200px;
+            height: 100px;
+            border: 3px solid #73ad21;
+        }
+    </style>
+</head>
+<body>
+    <h1>Position</h1>
+    <ul>
+        <li>fixed : 브라우저를 기준으로 특정 위치에 고정으로 배치</li>
+        <li>static (default) : 정상적인 흐름</li>
+        <li>relative : 정상적인 위치로 부터 상대적인 위치에 태그(요소-element)를 배치</li>
+        <li>
+            absolute : 부모태그가 relative일때, 혹은 부모태그 중 ralative가 없으면 <br>
+            전체페이지(body)를 기준으로 시작위치에서 top, left, bottom, right 등의 절대적 수치만큼 배치
+        </li>
+    </ul>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <h1>많이 내려왔음!</h1>
+    <div class="relative">This div element has position: relative;
+        <div class="absolute">This div element has position: absolute;</div>
+    </div>
+</body>
+</html>
